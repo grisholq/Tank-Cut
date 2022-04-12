@@ -8,6 +8,5 @@ public class CannonballSpeedEventSenderMono : MonoBehaviour
     {
         ref var cannonballSpeed = ref WorldHandler.GetWorld().NewEntity().Get<CannonballChangeSpeedEvent>();
         cannonballSpeed.Speed = speed;
-        Debug.Log(speed);
     }
 }

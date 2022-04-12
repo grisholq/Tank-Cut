@@ -8,6 +8,5 @@ public class CannonballHeightEventSenderMono : MonoBehaviour
     {
         ref var cannonballHeight = ref WorldHandler.GetWorld().NewEntity().Get<CannonballChangeHeightEvent>();
         cannonballHeight.Height = height;
-        Debug.Log(height);
     }
 }
