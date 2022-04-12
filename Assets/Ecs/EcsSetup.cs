@@ -24,12 +24,10 @@ public class EcsSetup : MonoBehaviour
     {
         _systems.Add(new LevelWinSystem());
         _systems.Add(new LevelLoseSystem());
+        _systems.Add(new LevelRestartSystem());
 
         _systems.Add(new LevelWinScreenSystem());
         _systems.Add(new LevelLoseScreenSystem());
-
-        _systems.Add(new SplineMoveSystem());
-        _systems.Add(new SplineMoveEndSystem());
 
         _systems.Add(new InizializeEntityRequestSystem());
 
@@ -43,9 +41,10 @@ public class EcsSetup : MonoBehaviour
         _systems.Add(new TankShotMarkSystem());
 
         _systems.Add(new TankCannonballSpawnSystem());
+
         _systems.Add(new TankCannonballSplineSetSystem());
-
-
+        _systems.Add(new TankCannonballStartSetSystem());
+        _systems.Add(new TankCannonballEndSetSystem());
 
         _systems.Add(new TankCannonEventsDeleterSystem());
 
@@ -59,30 +58,19 @@ public class EcsSetup : MonoBehaviour
         _systems.Add(new TankLoseCheckSystem());
 
 
-        _systems.Add(new CannonballSplineInitialPositionsSetSystem());
+
         _systems.Add(new CannonballSplineAdjustSystem());
-        _systems.Add(new CannonballInizializeMovementSystem());
+
+        _systems.Add(new CannonballStartSplineMovementSystem());
+        _systems.Add(new CannonballSplineMoveSystem());
+        _systems.Add(new CannonballEndSplineMovementSystem());
 
         _systems.Add(new CannonballSplinePositionUpdateSystem());
-
-        _systems.Add(new CannonballSplinePositionsResetSystem());
-        _systems.Add(new CannonballSplineMoveEndSystem());
-
-        _systems.Add(new CannonballMovementEndSystem());
-
-        _systems.Add(new CannonballsSpeedInitializeSystem());
-        _systems.Add(new CannonballsHeightInitializeSystem());
-
-        _systems.Add(new CannonballsHeightChangeSystem());
-        _systems.Add(new CannonballsSpeedChangeSystem());
     }
 
     private void AddOneFrames()
     {
         _systems.OneFrame<TankShootEvent>();
-
-        _systems.OneFrame<CannonballChangeHeightEvent>();
-        _systems.OneFrame<CannonballChangeSpeedEvent>();
 
         _systems.OneFrame<CannonballEntitySpawnedEvent>();
 
@@ -94,7 +82,6 @@ public class EcsSetup : MonoBehaviour
 
         _systems.OneFrame<LevelWonEvent>();
         _systems.OneFrame<LevelLostEvent>();
-
     }
 
     private void Update()

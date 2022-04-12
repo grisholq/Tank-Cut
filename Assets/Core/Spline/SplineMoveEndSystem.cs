@@ -2,7 +2,7 @@ using Leopotam.Ecs;
 
 public class SplineMoveEndSystem : IEcsRunSystem
 {
-    private readonly EcsFilter<SplineMovePercent, SplineMoveSpeed> _splinesFilter;
+    private readonly EcsFilter<SplineMovePercent> _splinesFilter;
 
     public void Run()
     {

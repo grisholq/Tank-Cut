@@ -10,8 +10,6 @@ public class LevelLoseSystem : IEcsRunSystem
     {
         if (_undiedTankFilter.IsEmpty()) return;
 
-        Debug.Log(2);
-
         _world.NewEntity().Get<LevelLostEvent>();
 
         foreach (var i in _undiedTankFilter)

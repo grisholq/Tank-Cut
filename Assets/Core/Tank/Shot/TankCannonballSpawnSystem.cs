@@ -3,16 +3,16 @@ using Leopotam.Ecs;
 
 public class TankCannonballSpawnSystem : IEcsRunSystem
 {
-    private readonly EcsFilter<TankTag, TransformComponent, TankShootEvent> _clickedTanksFilter;
+    private readonly EcsFilter<TankTag, TransformComponent, TankShootEvent> _shootTanksFilter;
     private readonly EcsFilter<CannonballPrefab> _cannonballPrefabFitler;
 
     public void Run()
     {
-        if (_clickedTanksFilter.IsEmpty()) return;
+        if (_shootTanksFilter.IsEmpty()) return;
 
-        foreach (var i in _clickedTanksFilter)
+        foreach (var i in _shootTanksFilter)
         {
-            Transform tank = _clickedTanksFilter.Get2(0).Transform;
+            Transform tank = _shootTanksFilter.Get2(0).Transform;
             GameObject prefab = _cannonballPrefabFitler.Get1(0).Cannonball;
 
             GameObject instance = Object.Instantiate(prefab);
@@ -20,7 +20,7 @@ public class TankCannonballSpawnSystem : IEcsRunSystem
 
             EcsEntity entity = instance.GetComponent<EntityReference>().Entity;
 
-            _clickedTanksFilter.GetEntity(i).Get<CannonballEntitySpawnedEvent>().Entity = entity;
+            _shootTanksFilter.GetEntity(i).Get<CannonballEntitySpawnedEvent>().Entity = entity;
         }
     }
 }

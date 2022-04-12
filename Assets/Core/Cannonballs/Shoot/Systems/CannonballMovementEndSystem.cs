@@ -12,7 +12,7 @@ public class CannonballMovementEndSystem : IEcsRunSystem
 
         foreach (var i in _endedCannonballsFilter)
         {
-            _world.NewEntity().Get<CannonballMovementEndedEvent>();
+            
         }
     }
 }

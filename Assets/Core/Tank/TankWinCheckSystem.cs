@@ -4,7 +4,7 @@ using UnityEngine;
 public class TankWinCheckSystem : IEcsRunSystem
 {
     private readonly EcsWorld _world;
-    private readonly EcsFilter<TankTag>.Exclude<TankDiedState> _tanksFilter;
+    private readonly EcsFilter<TankTag>.Exclude<DeathState> _tanksFilter;
 
     public void Run()
     {

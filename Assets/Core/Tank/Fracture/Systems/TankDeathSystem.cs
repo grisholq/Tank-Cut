@@ -11,7 +11,7 @@ public class TankDeathSystem : IEcsRunSystem
 
         foreach (var i in _fracturedTanksFilter)
         {
-            _fracturedTanksFilter.GetEntity(i).Get<TankDiedState>();
+            _fracturedTanksFilter.GetEntity(i).Get<DeathState>();
         }
     }
 }

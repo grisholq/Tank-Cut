@@ -4,7 +4,7 @@ using UnityEngine;
 public class TankLoseCheckSystem : IEcsRunSystem
 {
     private readonly EcsWorld _world;
-    private readonly EcsFilter<TankTag, TankIsTargetOf> _tanksFilter;
+    private readonly EcsFilter<TankTag, TankIsTargetOf>.Exclude<DeathState> _tanksFilter;
 
     public void Run()
     {
@@ -26,7 +26,7 @@ public class TankLoseCheckSystem : IEcsRunSystem
     {
         for (int c = 0; c < tanks.TankCount; c++)
         {
-            if (tanks.GetTank(c).Has<TankDiedState>() == false)
+            if (tanks.GetTank(c).Has<DeathState>() == false)
             {
                 return true;
             }

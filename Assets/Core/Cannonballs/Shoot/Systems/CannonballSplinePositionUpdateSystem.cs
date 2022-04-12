@@ -2,8 +2,8 @@ using Leopotam.Ecs;
 
 public class CannonballSplinePositionUpdateSystem : IEcsRunSystem
 {
-    private readonly EcsFilter<CannonballTag, TransformComponent, CannonSpline, SplineMovePercent, SplineMoveSpeed> _cannonSplineFilter;
-
+    private readonly EcsFilter<CannonballTag, TransformComponent, CannonSpline, SplineMovePercent> _cannonSplineFilter;
+ 
     public void Run()
     {
         foreach (var i in _cannonSplineFilter)
