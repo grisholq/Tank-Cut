@@ -7,5 +7,5 @@ public abstract class EcsEventSenderMono : MonoBehaviour
 
     protected EcsEntity Entity => _entityReference.Entity;
 
-    protected abstract void SendEventToEntity();
+    public abstract void SendEventToEntity();
 }

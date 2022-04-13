@@ -2,7 +2,7 @@ using Leopotam.Ecs;
 
 public class TankShotSystem : IEcsRunSystem
 {
-    private readonly EcsFilter<TankTag, TankClickEvent> _clickedTanksFilter;
+    private readonly EcsFilter<TankTag, TankClickEvent>.Exclude<DeathState> _clickedTanksFilter;
     private readonly EcsFilter<TankShotState> _shotTanksFilter;
 
     public void Run()

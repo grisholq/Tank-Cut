@@ -3,7 +3,7 @@ using Leopotam.Ecs;
 public class CannonballEndSplineMovementSystem : IEcsRunSystem
 {
     private readonly EcsWorld _world;
-    private readonly EcsFilter<CannonballTag, CannonSpline, SplineMovePercent> _splineCannonballsFilter;
+    private readonly EcsFilter<CannonballTag, SplineFollowerComponent, CannonballSplineEndReachedEvent> _splineCannonballsFilter;
 
     public void Run()
     {
@@ -11,17 +11,14 @@ public class CannonballEndSplineMovementSystem : IEcsRunSystem
 
         foreach (var i in _splineCannonballsFilter)
         {
-            var movePercent = _splineCannonballsFilter.Get3(i);
+            var splineFollower = _splineCannonballsFilter.Get2(i).Follower;
 
-            if (movePercent.Percent >= 1)
-            {
-                EcsEntity cannonball = _splineCannonballsFilter.GetEntity(i);
+            splineFollower.follow = false;
 
-                cannonball.Del<CannonSpline>();
-                cannonball.Del<SplineMovePercent>();
+            _splineCannonballsFilter.GetEntity(i).Del<CannonballSplineEndReachedEvent>();
 
-                _world.NewEntity().Get<CannonballMovementEndedEvent>();
-            }
+            _world.NewEntity().Get<CannonballMovementEndedEvent>();
+
         }
     }
 }

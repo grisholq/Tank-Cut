@@ -3,14 +3,20 @@ using UnityEngine;
 
 public class CannonballStartSplineMovementSystem : IEcsRunSystem
 {
-    private readonly EcsFilter<CannonballTag, CannonSpline, SplineMovementStarted> _startedCannonballsFilter;
+    private readonly EcsFilter<CannonballTag, CannonSpline, SplineFollowerComponent, SplineMovementStarted> _startedCannonballsFilter;
+    private readonly EcsFilter<CannonballsSpeed> _cannonballSpeedFilter;
 
     public void Run()
     {
         foreach (var i in _startedCannonballsFilter)
         {
-            ref var movePercent = ref _startedCannonballsFilter.GetEntity(i).Get<SplineMovePercent>();
-            movePercent.Percent = 0;
+            var speed = _cannonballSpeedFilter.Get1(0).Speed;
+            var spline = _startedCannonballsFilter.Get2(i).Spline;
+            var splineFollower = _startedCannonballsFilter.Get3(i).Follower;
+
+            splineFollower.spline = spline;
+            splineFollower.follow = true;
+            splineFollower.followSpeed = speed;
         }
     }
 }
