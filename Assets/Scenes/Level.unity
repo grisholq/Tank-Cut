@@ -46265,7 +46265,7 @@ MonoBehaviour:
     00000000:
       type: {class: CannonballsHeight, ns: , asm: Assembly-CSharp}
       data:
-        Height: 1.5
+        Height: 0.5
     00000001:
       type: {class: CannonballsSpeed, ns: , asm: Assembly-CSharp}
       data:
