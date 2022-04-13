@@ -15,7 +15,7 @@ public class TankMoulageCannonballEndSetSystem : IEcsRunSystem
             ref var shotEnd = ref cannonball.Get<CannonballShotEnd>();
 
             shotEnd.End = targetMoulage;
-            shotEnd.Infinite = false;
+            shotEnd.Infinite = true;
         }
     }
 }

@@ -5,6 +5,7 @@ public class CannonballSplineAdjustSystem : IEcsRunSystem
 {
     private readonly EcsFilter<CannonballTag, CannonSpline, CannonballShotStart, CannonballShotEnd, SplineMovementStarted> _cannonPositionsFilter;
     private readonly EcsFilter<CannonballsHeight> _cannonballHeightFilter;
+    private readonly EcsFilter<CannonballsSpeed> _cannonballSpeedFilter;
 
     public void Run()
     {
@@ -38,7 +39,7 @@ public class CannonballSplineAdjustSystem : IEcsRunSystem
         Vector3 midlePosition = (endPosition - startPosition);
         midlePosition.y = 0;
         midlePosition /= 2;
-        midlePosition.y = height;
+        midlePosition.y = (endPosition - startPosition).magnitude * height;
 
 
         spline.SetPointPosition(0, startPosition);
@@ -54,7 +55,7 @@ public class CannonballSplineAdjustSystem : IEcsRunSystem
 
         Vector3 delta = endPosition - startPosition;
         delta = delta.normalized;
-        endPosition = startPosition + delta * 10;
+        endPosition = startPosition + delta * 7;
         endPosition.y = 0.1f;
 
         spline.SetPointPosition(0, startPosition);

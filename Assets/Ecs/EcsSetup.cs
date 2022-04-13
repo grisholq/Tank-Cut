@@ -22,6 +22,8 @@ public class EcsSetup : MonoBehaviour
 
     private void AddSystems()
     {
+        _systems.Add(new ButtonToWallPathInizializeSystem());
+
         _systems.Add(new InizializeEntityRequestSystem());
         _systems.Add(new ClickInputSystem());
 

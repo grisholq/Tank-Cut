@@ -6,6 +6,9 @@ public static class LevelSystemsExtension
     {
         systems.Add(new LevelWinSystem());
         systems.Add(new LevelLoseSystem());
+
+        systems.Add(new LevelEndSystem());
+
         systems.Add(new LevelRestartSystem());
 
         systems.Add(new LevelWinScreenSystem());
