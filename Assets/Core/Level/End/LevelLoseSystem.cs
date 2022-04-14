@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelLoseSystem : IEcsRunSystem
 {
     private readonly EcsWorld _world;
-    private readonly EcsFilter<UndiedTankAppearedEvent> _undiedTankFilter;
+    private readonly EcsFilter<TanksCannonBeShotOrTargeted> _undiedTankFilter;
 
     public void Run()
     {
