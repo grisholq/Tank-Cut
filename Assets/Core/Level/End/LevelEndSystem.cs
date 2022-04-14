@@ -1,3 +1,4 @@
+using UnityEngine;
 using Leopotam.Ecs;
 
 public class LevelEndSystem : IEcsRunSystem
@@ -8,7 +9,7 @@ public class LevelEndSystem : IEcsRunSystem
 
     public void Run()
     {
-        if (_wonEventsFilter.IsEmpty() || _lostEventsFilter.IsEmpty()) return;
+        if (_wonEventsFilter.IsEmpty() && _lostEventsFilter.IsEmpty()) return;
 
         _world.NewEntity().Get<LevelEndState>();
     }

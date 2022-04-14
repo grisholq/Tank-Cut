@@ -73,6 +73,8 @@ public class EcsSetup : MonoBehaviour
 
         _systems.OneFrame<PatrolPointReachedEvent>();
         _systems.OneFrame<ButtonPressedEvent>();
+
+        _systems.OneFrame<NextLevelEvent>();
     }
 
     private void Update()
