@@ -4,6 +4,7 @@ public static class LevelPassData
 {
     private const string LevelIndexKey = "Current Level";
     private const string LevelsLoopKey = "Levels Loop";
+    private const string PassedLevelsKey = " Passed Levels";
 
     private const int FirstLevelIndex = 1;
     private const bool LevelsLoop = false;
@@ -11,11 +12,12 @@ public static class LevelPassData
 
     private static int _currentLevelIndex;
     private static bool _levelsLoop;
+    private static int _passedLevels;
 
     static LevelPassData()
     {
         InizializeLevelIndex();
-        InizializeLevelIndex();
+        InitializePassedLevels();
         InizializeLevelsLoop();
     }
 
@@ -26,6 +28,9 @@ public static class LevelPassData
 
         _levelsLoop = LevelsLoop;
         PlayerPrefs.SetInt(LevelsLoopKey, LevelsLoop == true ? 1 : 0);
+
+        _passedLevels = 1;
+        PlayerPrefs.SetInt(PassedLevelsKey, _passedLevels);
     }
 
     private static void InizializeLevelIndex()
@@ -54,6 +59,19 @@ public static class LevelPassData
         }
     }
 
+    private static void InitializePassedLevels()
+    {
+        if (PlayerPrefs.HasKey(PassedLevelsKey))
+        {
+            _passedLevels = PlayerPrefs.GetInt(PassedLevelsKey);
+        }
+        else
+        {
+            _passedLevels = 1;
+            PlayerPrefs.SetInt(PassedLevelsKey, _passedLevels);
+        }
+    }
+
     public static int GetCurrentLevelIndex()
     {
         return PlayerPrefs.GetInt(LevelIndexKey);
@@ -63,9 +81,17 @@ public static class LevelPassData
     {
         return PlayerPrefs.GetInt(LevelsLoopKey) == 1 ? true : false;
     }
+    
+    public static int GetPassedLevels()
+    {
+        return PlayerPrefs.GetInt(PassedLevelsKey);
+    }
 
     public static void NextLevel()
     {
+        _passedLevels++;
+        SetPassedLevel(_passedLevels);
+
         if(_levelsLoop)
         {
             SetCurrentLevel(Random.Range(FirstLevelIndex, LevelsCount + 1));
@@ -95,6 +121,13 @@ public static class LevelPassData
     {
         _levelsLoop = loop;
         PlayerPrefs.SetInt(LevelsLoopKey, _levelsLoop == true ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+    
+    private static void SetPassedLevel(int passedLevel)
+    {
+        _passedLevels = passedLevel;
+        PlayerPrefs.SetInt(PassedLevelsKey, _passedLevels);
         PlayerPrefs.Save();
     }
 }

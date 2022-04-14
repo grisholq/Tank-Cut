@@ -10,7 +10,7 @@ public class LevelNumberUIInitializationSystem : IEcsInitSystem
         foreach (var i in _levelNumber)
         {
             var numberText = _levelNumber.Get1(i).Text;
-            numberText.text = "Level " + LevelPassData.GetCurrentLevelIndex().ToString();
+            numberText.text = "Level " + LevelPassData.GetPassedLevels();
         }
     }
 }
