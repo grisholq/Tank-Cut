@@ -7,7 +7,7 @@ public static class LevelPassData
 
     private const int FirstLevelIndex = 1;
     private const bool LevelsLoop = false;
-    private const int LevelsCount = 10;
+    private const int LevelsCount = 20;
 
     private static int _currentLevelIndex;
     private static bool _levelsLoop;

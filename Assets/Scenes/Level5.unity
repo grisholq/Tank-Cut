@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.91
+      value: 0.85999995
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -762,7 +762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.38
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -791,6 +791,54 @@ PrefabInstance:
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[0].tangent.x
+      value: -0.00027275085
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[0].tangent.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[1].tangent.x
+      value: -0.029570341
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[2].tangent.x
+      value: 0.008517027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[0].position.x
+      value: -0.00027275085
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[0].position.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[0].tangent2.x
+      value: -0.00027275085
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[0].tangent2.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[1].position.x
+      value: -0.029570341
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[1].tangent2.x
+      value: -0.029570341
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[2].position.x
+      value: 0.008517027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097908145768316556, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: spline.points.Array.data[2].tangent2.x
+      value: 0.008517027
       objectReference: {fileID: 0}
     - target: {fileID: 5367729606007555339, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_Name
@@ -879,7 +927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.23
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1070,7 +1118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.23
+      value: 2.4399998
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3193,7 +3241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.98
+      value: -2.1000001
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3399,7 +3447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3407,7 +3455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.96
+      value: -2.0800002
       objectReference: {fileID: 0}
     - target: {fileID: 4698891651720798129, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3437,6 +3485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5097908146334833311, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d4d6c41b4d298f4fb6ca7bfbbf32370, type: 2}
     - target: {fileID: 5367729606007555339, guid: 2f7c2d02bef1c49478763d5410ff8e68, type: 3}
       propertyPath: m_Name
       value: Tank

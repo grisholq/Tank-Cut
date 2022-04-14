@@ -13754,7 +13754,6 @@ GameObject:
   - component: {fileID: 5097908146334833308}
   - component: {fileID: 5097908146334833310}
   - component: {fileID: 5097908146334833311}
-  - component: {fileID: 5097908146334833297}
   m_Layer: 0
   m_Name: Tank VIew
   m_TagString: Untagged
@@ -13828,31 +13827,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5097908146334833297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5097908146334833309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5711ac80149b2e449032315bef115b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InsideMaterial: {fileID: 2100000, guid: 64a64dd4c3eeaed4ea7b774cdbbdab8e, type: 2}
-  FractureTemplate: {fileID: 100000, guid: bb85f1155c6bfa044bd2c250028a85b8, type: 3}
-  PiecesParent: {fileID: 5097908144249524922}
-  NumFracturePieces: 5
-  NumIterations: 3
-  NumGenerations: 1
-  FractureRadius: 0
-  UVScale: 1
-  DistributeMass: 1
-  GeneratedPieces: {fileID: 0}
-  EntireMeshBounds:
-    m_Center: {x: 0.00000014901161, y: 1.2173445, z: -0.07388234}
-    m_Extent: {x: 0.2552769, y: 0.37305388, z: 0.35486677}
 --- !u!1 &5367729606007555339
 GameObject:
   m_ObjectHideFlags: 0
@@ -13862,7 +13836,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4698891651720798129}
-  - component: {fileID: 8546154903671853076}
   - component: {fileID: 5367729606007555342}
   - component: {fileID: 5367729606007555340}
   - component: {fileID: 5367729606007555341}
@@ -13892,14 +13865,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!33 &8546154903671853076
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5367729606007555339}
-  m_Mesh: {fileID: 4214266722782416146, guid: 32ee32cb4002643eab068e85b0d28b47, type: 3}
 --- !u!65 &5367729606007555342
 BoxCollider:
   m_ObjectHideFlags: 0

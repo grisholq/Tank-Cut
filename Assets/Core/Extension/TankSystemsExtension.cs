@@ -4,6 +4,8 @@ public static class TankSystemsExtension
 {
     public static void AddTankSystems(this EcsSystems systems)
     {
+        systems.Add(new TankAliveNumberDisplaySystem());
+
         systems.Add(new TankShotStateResetSystem());
 
         systems.Add(new TankClickSystem());

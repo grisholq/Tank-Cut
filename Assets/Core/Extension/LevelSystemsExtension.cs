@@ -14,5 +14,7 @@ public static class LevelSystemsExtension
 
         systems.Add(new LevelWinScreenSystem());
         systems.Add(new LevelLoseScreenSystem());
+
+        systems.Add(new LevelNumberUIInitializationSystem());
     }
 }
