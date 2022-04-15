@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1205511431374824583}
   - component: {fileID: 982451390577931229}
   - component: {fileID: 5548357590608243574}
-  - component: {fileID: 8034130198609521356}
   - component: {fileID: 5548357590608243572}
   - component: {fileID: -8465614430215156775}
   - component: {fileID: 7455868060751838069}
@@ -386,45 +385,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8034130198609521356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548357590608243582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tags:
-  - id: 0
-  _components:
-  - id: 1
-  - id: 2
-  - id: 3
-  - id: 4
-  references:
-    version: 1
-    00000000:
-      type: {class: CannonballTag, ns: , asm: Assembly-CSharp}
-    00000001:
-      type: {class: TransformComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Transform: {fileID: 5548357590608243573}
-    00000002:
-      type: {class: InizializeEntityRequest, ns: , asm: Assembly-CSharp}
-      data:
-        Reference: {fileID: 5548357590608243572}
-    00000003:
-      type: {class: SplineFollowerComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Follower: {fileID: 982451390577931229}
-    00000004:
-      type: {class: RigidbodyComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Rigidbody: {fileID: 1205511431374824583}
 --- !u!114 &5548357590608243572
 MonoBehaviour:
   m_ObjectHideFlags: 0

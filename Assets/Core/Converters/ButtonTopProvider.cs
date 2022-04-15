@@ -2,8 +2,7 @@ using System;
 using UnityEngine;
 using Voody.UniLeo;
 
-[Serializable]
-public struct ButtonToWallPath
+public class ButtonTopProvider : MonoProvider<ButtonTop>
 {
 
 }
