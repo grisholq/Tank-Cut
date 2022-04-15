@@ -429,18 +429,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 461176156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
+  m_Script: {fileID: 11500000, guid: b6261a81df3c8c741af645a1b538750d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tags: []
-  _components:
-  - id: 0
-  references:
-    version: 1
-    00000000:
-      type: {class: CameraComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Camera: {fileID: 461176159}
+  value:
+    Camera: {fileID: 461176159}
 --- !u!114 &461176162
 MonoBehaviour:
   m_ObjectHideFlags: 0
