@@ -5,6 +5,7 @@ using Leopotam.Ecs;
 using System.Linq;
 using System;
 using Unity.Collections;
+using System.Reflection;
 #if UNITY_EDITOR
 using System.Reflection;
 using UnityEditor;
@@ -43,7 +44,7 @@ namespace DCFA
         {
             entity.Replace(component);
         }
-        private static MethodInfo convertHelper = typeof(MultiMonoProvider).GetMethod("ConvertHelper", BindingFlags.Instance | BindingFlags.NonPublic);
+        public static MethodInfo convertHelper = typeof(MultiMonoProvider).GetMethod("ConvertHelper", BindingFlags.Instance | BindingFlags.NonPublic);
         void IConvertToEntity.Convert(EcsEntity entity)
         {
             ConvertArray(_tags, entity);
