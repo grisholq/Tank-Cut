@@ -13838,8 +13838,14 @@ GameObject:
   - component: {fileID: 4698891651720798129}
   - component: {fileID: 5367729606007555342}
   - component: {fileID: 5367729606007555340}
-  - component: {fileID: 5367729606007555341}
   - component: {fileID: 5367729606007555338}
+  - component: {fileID: 5732586358458123782}
+  - component: {fileID: 4738552789332842583}
+  - component: {fileID: 8716030304561841482}
+  - component: {fileID: 8122509944466574851}
+  - component: {fileID: 1513737424278550150}
+  - component: {fileID: 6076053622310168134}
+  - component: {fileID: 4504959691610356548}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -13891,58 +13897,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &5367729606007555341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5367729606007555339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tags:
-  - id: 0
-  _components:
-  - id: 1
-  - id: 2
-  - id: 3
-  - id: 4
-  - id: 5
-  - id: 6
-  references:
-    version: 1
-    00000000:
-      type: {class: TankTag, ns: , asm: Assembly-CSharp}
-    00000001:
-      type: {class: InizializeEntityRequest, ns: , asm: Assembly-CSharp}
-      data:
-        Reference: {fileID: 5367729606007555338}
-    00000002:
-      type: {class: SplineComputerComponent, ns: , asm: Assembly-CSharp}
-      data:
-        SplineComputer: {fileID: 5097908145768316556}
-    00000003:
-      type: {class: TransformComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Transform: {fileID: 4698891651720798129}
-    00000004:
-      type: {class: FractureViewComponent, ns: , asm: Assembly-CSharp}
-      data:
-        View: {fileID: 5097908146334833309}
-    00000005:
-      type: {class: FracturePiecesComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Parent: {fileID: 5097908144249524923}
-    00000006:
-      type: {class: TankTargets, ns: , asm: Assembly-CSharp}
-      data:
-        Targets:
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
 --- !u!114 &5367729606007555338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13955,3 +13909,99 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877927123da9b004bbff9a25db0406a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5732586358458123782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367729606007555339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5441f0c0b738ebf419971b2b2f4a48e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4738552789332842583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367729606007555339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9034ef820fbad454cb43768d440820e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Reference: {fileID: 5367729606007555338}
+--- !u!114 &8716030304561841482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367729606007555339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f80834111844ff428dcbea0db4570de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    SplineComputer: {fileID: 5097908145768316556}
+--- !u!114 &8122509944466574851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367729606007555339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27914ceca10f25845a996070011a04a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Transform: {fileID: 4698891651720798129}
+--- !u!114 &1513737424278550150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367729606007555339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ca09cc864b7fe4a91cfffd08709bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    View: {fileID: 5097908146334833309}
+--- !u!114 &6076053622310168134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367729606007555339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847a8938b23d8a84c981921a8a1ddb5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Parent: {fileID: 5097908144249524923}
+--- !u!114 &4504959691610356548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367729606007555339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723731d6d2a8094486b65870c62f3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Targets: []

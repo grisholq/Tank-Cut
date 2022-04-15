@@ -1204,7 +1204,8 @@ GameObject:
   - component: {fileID: 3174921259895375732}
   - component: {fileID: 3174921259895375735}
   - component: {fileID: 3174921259895375731}
-  - component: {fileID: 3174921259895375730}
+  - component: {fileID: 3962284768226358520}
+  - component: {fileID: 8393752731856953911}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1308,7 +1309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &3174921259895375730
+--- !u!114 &3962284768226358520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1317,23 +1318,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 3174921259895375689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 4582a524517e5374b983c37cb6367da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tags: []
-  _components:
-  - id: 0
-  - id: 1
-  references:
-    version: 1
-    00000000:
-      type: {class: WinScreenComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Screen: {fileID: 6673999811141452469}
-    00000001:
-      type: {class: LoseScreenComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Screen: {fileID: 3174921258793888396}
+  value:
+    Screen: {fileID: 6673999811141452469}
+--- !u!114 &8393752731856953911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3174921259895375689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de38d5ea5ba9d664ca3a4f6e3a3b147a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Screen: {fileID: 3174921258793888396}
 --- !u!1 &3890446327284327666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1349,7 @@ GameObject:
   - component: {fileID: 5459138704509629132}
   - component: {fileID: 2740731836711392176}
   - component: {fileID: 8323795960136184647}
-  - component: {fileID: 3882767827953274592}
+  - component: {fileID: 8355765954173940072}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -1485,7 +1488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &3882767827953274592
+--- !u!114 &8355765954173940072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1494,18 +1497,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3890446327284327666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a82c3d1f43752c4fb0beec592dcf3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tags: []
-  _components:
-  - id: 0
-  references:
-    version: 1
-    00000000:
-      type: {class: LevelNumberUIComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Text: {fileID: 2740731836711392176}
+  value:
+    Text: {fileID: 0}
 --- !u!1 &4568252871082374041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,7 +1513,7 @@ GameObject:
   - component: {fileID: 1597600046412814479}
   - component: {fileID: 678989956034847307}
   - component: {fileID: 4269865212245959557}
-  - component: {fileID: 7713653460964333440}
+  - component: {fileID: 8191027235526916883}
   m_Layer: 0
   m_Name: Tanks Count
   m_TagString: Untagged
@@ -1567,7 +1563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &7713653460964333440
+--- !u!114 &8191027235526916883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1576,18 +1572,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4568252871082374041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
+  m_Script: {fileID: 11500000, guid: c43f6873aa064624da1234ca1e55b19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tags: []
-  _components:
-  - id: 0
-  references:
-    version: 1
-    00000000:
-      type: {class: TankNumberUIComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Text: {fileID: 3813304479012470702}
+  value:
+    Text: {fileID: 3813304479012470702}
 --- !u!1 &6673999811141452469
 GameObject:
   m_ObjectHideFlags: 0

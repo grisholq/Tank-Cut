@@ -1,5 +1,8 @@
 using Leopotam.Ecs;
+using System;
+using Voody.UniLeo;
 
+[Serializable]
 public struct TankTargets
 {
     public EntityReference[] Targets;

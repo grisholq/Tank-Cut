@@ -1,6 +1,9 @@
 using UnityEngine;
 using Leopotam.Ecs;
+using System;
+using Voody.UniLeo;
 
+[Serializable]
 public struct TankIsTargetOf
 {
     [SerializeField] private EntityReference[] References;
