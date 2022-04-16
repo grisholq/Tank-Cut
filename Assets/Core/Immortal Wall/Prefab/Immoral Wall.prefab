@@ -14,8 +14,11 @@ GameObject:
   - component: {fileID: 144199942073814291}
   - component: {fileID: 144199942073814288}
   - component: {fileID: 144199942073814317}
-  - component: {fileID: 144199942073814314}
   - component: {fileID: 144199942073814289}
+  - component: {fileID: 8066363335538872696}
+  - component: {fileID: 4288366646614357071}
+  - component: {fileID: 5445917996055078070}
+  - component: {fileID: 8552094296701932138}
   m_Layer: 0
   m_Name: Immoral Wall
   m_TagString: Untagged
@@ -126,44 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &144199942073814314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144199942073814315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tags: []
-  _components:
-  - id: 0
-  - id: 1
-  - id: 2
-  - id: 3
-  references:
-    version: 1
-    00000000:
-      type: {class: TransformComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Transform: {fileID: 144199942073814318}
-    00000001:
-      type: {class: PatrolRawPoints, ns: , asm: Assembly-CSharp}
-      data:
-        RawPoints:
-        - {fileID: 0}
-        - {fileID: 0}
-    00000002:
-      type: {class: MovementSpeed, ns: , asm: Assembly-CSharp}
-      data:
-        Speed: 2
-    00000003:
-      type: {class: InizializeEntityRequest, ns: , asm: Assembly-CSharp}
-      data:
-        Reference: {fileID: 144199942073814288}
 --- !u!114 &144199942073814289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +142,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _entityReference: {fileID: 144199942073814288}
+--- !u!114 &8066363335538872696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144199942073814315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27914ceca10f25845a996070011a04a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Transform: {fileID: 144199942073814318}
+--- !u!114 &4288366646614357071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144199942073814315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eacf229493d77404fb0e79f26766a046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Points: []
+--- !u!114 &5445917996055078070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144199942073814315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42b90c2e14680044841d7b949fc725b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Speed: 2
+--- !u!114 &8552094296701932138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144199942073814315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9034ef820fbad454cb43768d440820e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Reference: {fileID: 144199942073814288}
 --- !u!1 &144199942363734825
 GameObject:
   m_ObjectHideFlags: 0

@@ -241,8 +241,12 @@ GameObject:
   - component: {fileID: 1640962497493489072}
   - component: {fileID: 1640962497493489075}
   - component: {fileID: 1640962497493489074}
-  - component: {fileID: 1640962497493489073}
   - component: {fileID: 1640962497493489084}
+  - component: {fileID: 3837114676531779616}
+  - component: {fileID: 8027018850469501646}
+  - component: {fileID: 474208658835043215}
+  - component: {fileID: 5593815435669910085}
+  - component: {fileID: 7745887168810919203}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -292,45 +296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &1640962497493489073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640962497493489079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tags:
-  - id: 0
-  _components:
-  - id: 1
-  - id: 2
-  - id: 3
-  - id: 4
-  references:
-    version: 1
-    00000000:
-      type: {class: WallTag, ns: , asm: Assembly-CSharp}
-    00000001:
-      type: {class: TransformComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Transform: {fileID: 1640962497642349240}
-    00000002:
-      type: {class: FractureViewComponent, ns: , asm: Assembly-CSharp}
-      data:
-        View: {fileID: 1640962497642349244}
-    00000003:
-      type: {class: FracturePiecesComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Parent: {fileID: 1640962499551626375}
-    00000004:
-      type: {class: InizializeEntityRequest, ns: , asm: Assembly-CSharp}
-      data:
-        Reference: {fileID: 1640962497493489084}
 --- !u!114 &1640962497493489084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +308,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877927123da9b004bbff9a25db0406a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3837114676531779616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640962497493489079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 453ecd4b0dccb3c46af10360f379a4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8027018850469501646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640962497493489079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27914ceca10f25845a996070011a04a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Transform: {fileID: 1640962497493489072}
+--- !u!114 &474208658835043215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640962497493489079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ca09cc864b7fe4a91cfffd08709bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    View: {fileID: 1640962497642349244}
+--- !u!114 &5593815435669910085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640962497493489079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847a8938b23d8a84c981921a8a1ddb5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Parent: {fileID: 1640962499551626375}
+--- !u!114 &7745887168810919203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640962497493489079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9034ef820fbad454cb43768d440820e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Reference: {fileID: 1640962497493489084}
 --- !u!1 &1640962497493824026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,7 +2911,6 @@ GameObject:
   - component: {fileID: 1640962497642349240}
   - component: {fileID: 1640962497642349247}
   - component: {fileID: 1640962497642349246}
-  - component: {fileID: 1640962497642349245}
   m_Layer: 0
   m_Name: View
   m_TagString: Untagged
@@ -2950,31 +2982,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1640962497642349245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640962497642349244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5711ac80149b2e449032315bef115b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InsideMaterial: {fileID: 2100000, guid: 64a64dd4c3eeaed4ea7b774cdbbdab8e, type: 2}
-  FractureTemplate: {fileID: 100000, guid: bb85f1155c6bfa044bd2c250028a85b8, type: 3}
-  PiecesParent: {fileID: 1640962499551626368}
-  NumFracturePieces: 7
-  NumIterations: 3
-  NumGenerations: 1
-  FractureRadius: 0
-  UVScale: 1
-  DistributeMass: 1
-  GeneratedPieces: {fileID: 0}
-  EntireMeshBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.49675, y: 0.39743218, z: 0.07358251}
 --- !u!1 &1640962497645145611
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2238067185319983796}
   - component: {fileID: 2927601072366925073}
   - component: {fileID: 1100033775010267611}
-  - component: {fileID: 1460545701812690945}
   m_Layer: 0
   m_Name: View
   m_TagString: Untagged
@@ -84,31 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1460545701812690945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460545701812690958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5711ac80149b2e449032315bef115b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InsideMaterial: {fileID: 2100000, guid: 64a64dd4c3eeaed4ea7b774cdbbdab8e, type: 2}
-  FractureTemplate: {fileID: 100000, guid: bb85f1155c6bfa044bd2c250028a85b8, type: 3}
-  PiecesParent: {fileID: 1766975943774008372}
-  NumFracturePieces: 7
-  NumIterations: 3
-  NumGenerations: 1
-  FractureRadius: 0
-  UVScale: 1
-  DistributeMass: 1
-  GeneratedPieces: {fileID: 0}
-  EntireMeshBounds:
-    m_Center: {x: -0.11691892, y: -0.0064356327, z: 1.5750691}
-    m_Extent: {x: 0.40358266, y: 0.34437037, z: 0.50369376}
 --- !u!1 &1766975942452852842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6430,8 +6404,12 @@ GameObject:
   - component: {fileID: 1766975942899471720}
   - component: {fileID: 1766975942899471724}
   - component: {fileID: 1766975942899471725}
-  - component: {fileID: 1766975942899471722}
   - component: {fileID: 1766975942899471723}
+  - component: {fileID: 2066505657842985091}
+  - component: {fileID: 7516780515013230605}
+  - component: {fileID: 5035478900998109450}
+  - component: {fileID: 5553786441213187467}
+  - component: {fileID: 1073305703098060809}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -6481,45 +6459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &1766975942899471722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766975942899471721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b446a368a28104f9a83a0548e393eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tags:
-  - id: 0
-  _components:
-  - id: 1
-  - id: 2
-  - id: 3
-  - id: 4
-  references:
-    version: 1
-    00000000:
-      type: {class: BuildingTag, ns: , asm: Assembly-CSharp}
-    00000001:
-      type: {class: FractureViewComponent, ns: , asm: Assembly-CSharp}
-      data:
-        View: {fileID: 1460545701812690958}
-    00000002:
-      type: {class: FracturePiecesComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Parent: {fileID: 1766975943774008373}
-    00000003:
-      type: {class: TransformComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Transform: {fileID: 1766975942899471720}
-    00000004:
-      type: {class: InizializeEntityRequest, ns: , asm: Assembly-CSharp}
-      data:
-        Reference: {fileID: 1766975942899471723}
 --- !u!114 &1766975942899471723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6532,6 +6471,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877927123da9b004bbff9a25db0406a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2066505657842985091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766975942899471721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2203d63d92bd57c4fa04218cf79ce8b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7516780515013230605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766975942899471721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ca09cc864b7fe4a91cfffd08709bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    View: {fileID: 1460545701812690958}
+--- !u!114 &5035478900998109450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766975942899471721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847a8938b23d8a84c981921a8a1ddb5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Parent: {fileID: 1766975943774008373}
+--- !u!114 &5553786441213187467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766975942899471721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27914ceca10f25845a996070011a04a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Transform: {fileID: 1766975942899471720}
+--- !u!114 &1073305703098060809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766975942899471721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9034ef820fbad454cb43768d440820e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Reference: {fileID: 1766975942899471723}
 --- !u!1 &1766975942906868754
 GameObject:
   m_ObjectHideFlags: 0
